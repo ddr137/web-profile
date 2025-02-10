@@ -4,20 +4,21 @@
 
   <head>
     <meta charset="utf-8">
-<title>Emma Bennet / CSS class naming strategies for scalable dashboard design</title>
-<meta name="date.updated" content="2025-02-09T17:46:31.292Z">
+<title>Dadan R. / CSS class naming strategies for scalable dashboard design</title>
+<meta name="generator" content="Nue v1.0.0-RC.2 (nuejs.org)">
+<meta name="date.updated" content="2025-02-10T14:04:39.507Z">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="In web development, CSS and design work hand-in-hand to create compelling user experiences. CSS brings designs to life digitally, translating visual mockups into actual rendered elements.">
-<meta name="author" content="Emma Bennet">
+<meta name="author" content="Dadan R.">
 <meta property="og:title" content="CSS class naming strategies for scalable dashboard design">
 <meta property="og:description" content="In web development, CSS and design work hand-in-hand to create compelling user experiences. CSS brings designs to life digitally, translating visual mockups into actual rendered elements.">
-<meta property="og:image" content="https://simple-blog.nuejs.org/img/og_emma.png">
+<meta property="og:image" content="https://hiperkreatif.com/img/profile.png">
 <meta property="article:published_time" content="Tue Aug 13 2024 07:00:00 GMT+0700 (Western Indonesia Time)">
 <meta name="nue:components" content=" ">
 <meta name="nue:include" content="content cards motion">
 <meta name="nue:globals" content="@global">
 <meta name="nue:libs" content="@library">
-<link rel="icon" type="image/jpg" href="/img/favicon.jpg">
+<link rel="icon" type="image/png" href="/img/profile.png">
 <style href="/@global/colors.css">:root {
   --gray-100: #f3f4f6;
   --gray-200: #e5e7eb;
@@ -44,18 +45,36 @@ body {
   padding: 2% 5%;
 
   & > header nav {
-    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
     margin-bottom: 4rem;
     display: flex;
+  }
 
-    & > a:first-child {
-      background: url("/img/avatar-rounded.jpg") 0 / 2em no-repeat;
-      padding-left: 2.5em;
-    }
+  & > header nav > a:first-child {
+    align-items: center;
+    margin-right: auto;
+    padding: 0;
+    display: inline-flex;
+  }
 
-    & a {
-      padding: 1em 0;
-    }
+  & > header nav > a:first-child:before {
+    content: "";
+    background: url("/img/profile.png") 0 / cover no-repeat;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    margin-right: .5em;
+    display: inline-block;
+  }
+
+  & > header nav > a:first-child span {
+    vertical-align: middle;
+  }
+
+  & > header nav a {
+    padding: 1em 0;
+    display: inline-block;
   }
 
   & article {
@@ -267,7 +286,8 @@ article {
   <body>
     
     <header>
-  <nav><a href="/">Emma Bennet</a>
+  <nav><a href="/">Dadan R.</a>
+<a href="/portfolio/">Portfolio</a>
 <a href="/contact/">Contact</a></nav>
 </header>
     
@@ -330,10 +350,9 @@ article {
     
   </main>
     <footer>
-  <nav><a href="/">&#xa9; Emma Bennet</a>
-<a href="//x.com/tipiirai"><img src="/img/twitter.svg" width="22" height="22" alt="Twitter (X) profile"></a>
-<a href="//github.com/nuejs/nue/"><img src="/img/github.svg" width="22" height="22" alt="Github Projects"></a>
-<a href="//linkedin.com/in/tipiirai"><img src="/img/linkedin.svg" width="22" height="22" alt="LinkedIn profile"></a></nav>
+  <nav><a href="/">&#xa9; Dadan R.</a>
+<a href="//github.com/ddr137"><img src="/img/github.svg" width="22" height="22" alt="Github Projects"></a>
+<a href="//linkedin.com/in/ramdhani-ddr1"><img src="/img/linkedin.svg" width="22" height="22" alt="LinkedIn profile"></a></nav>
 </footer>
     
   </body>

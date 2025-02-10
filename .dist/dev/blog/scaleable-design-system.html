@@ -6,7 +6,7 @@
     <meta charset="utf-8">
 <title>Dadan R. / Crafting a scalable CSS design system</title>
 <meta name="generator" content="Nue v1.0.0-RC.2 (nuejs.org)">
-<meta name="date.updated" content="2025-02-10T13:49:22.481Z">
+<meta name="date.updated" content="2025-02-10T14:04:39.496Z">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Design systems are key to managing code at scale, but creating one that&#x2019;s flexible and maintainable takes work. A key to success is to break UI elements into reusable, abstracted components.">
 <meta name="author" content="Dadan R.">
@@ -75,6 +75,40 @@ body {
   & > header nav a {
     padding: 1em 0;
     display: inline-block;
+  }
+
+  & article {
+    & > header {
+      margin-bottom: 2rem;
+    }
+
+    & > section {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+  }
+
+  & > footer {
+    border-top: 1px solid var(--gray-200);
+    margin-top: 8rem;
+
+    & nav {
+      gap: .5em;
+      padding: 1rem 0;
+      display: flex;
+
+      & a {
+        opacity: .8;
+      }
+
+      & a:hover {
+        opacity: 1;
+      }
+
+      & a:nth-child(2) {
+        margin-left: auto;
+      }
+    }
   }
 }
 </style>
