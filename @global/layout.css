@@ -1,0 +1,79 @@
+/* CSS reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* consistent whitespace */
+ul, ol, figure, pre {
+  margin: 2em 0;
+}
+
+/* page layout */
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2% 5%;
+
+  > header nav {
+    margin-bottom: 4rem;
+    display: flex;
+    gap: 20px;
+    align-items: center; /* Key: Vertically align items */
+  }
+
+  > header nav > a:first-child {
+    display: inline-flex; /* Use inline-flex for alignment */
+    align-items: center; /* Vertically align image and text */
+    padding: 0; /* Remove padding from the <a> tag */
+    margin-right: auto;
+  }
+
+  > header nav > a:first-child::before {
+    content: "";
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    background: url(/img/profile.png) 0 50% no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 0.5em; /* Space between image and text */
+  }
+
+  > header nav > a:first-child span { /* Style the text within the link */
+    vertical-align: middle; /* Ensure text is vertically centered */
+  }
+
+  > header nav a {
+    padding: 1em 0;
+    display: inline-block; /* Helps with alignment */
+  }
+
+      /* content area: hero and sections */
+      article {
+        > header { margin-bottom: 2rem }
+  
+        > section {
+          max-width: 700px;
+          margin: 0 auto;
+        }
+      }
+  
+      /* global footer */
+      > footer {
+        border-top: 1px solid var(--gray-200);
+        margin-top: 8rem;
+  
+        nav {
+          padding: 1rem 0;
+          display: flex;
+          gap: .5em;
+  
+          a { opacity: .8 }
+          a:hover { opacity: 1 }
+  
+          a:nth-child(2) {
+            margin-left: auto;
+          }
+        }
+      }
+}
