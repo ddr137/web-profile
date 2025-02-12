@@ -1,0 +1,26 @@
+/*
+  Reusable button corner radius for link component. Used on front page
+*/
+
+/* Container untuk kumpulan tombol/link */
+.link-card {
+  border-radius: 30px;
+  background-color: var(--main-600);
+  margin: 1em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em; 
+  text-align: center; 
+}
+
+.link-card, 
+.link-card * {
+  color: white !important;
+}
+
+
+/* Efek hover: tombol akan berubah warna dan sedikit naik */
+.link-card:hover {
+  background-color: var(--main-500);
+  transform: translateY(-2px);
+}

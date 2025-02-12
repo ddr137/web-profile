@@ -1,0 +1,21 @@
+button, [role=button] {
+    background-color: var(--main-500);
+    font-family: inherit;
+    font-size: inherit;
+    margin-top: 1em;
+    width: 100%;
+    padding: .99em 1.5em;
+    border-radius: 50px;
+    font-weight: 550;
+    cursor: pointer;
+    color: white;
+    border: 0;
+  
+    &:hover {
+      background-color: var(--main-600);
+    }
+  
+    &:active {
+      transform: translateY(1px);
+    }
+  }
